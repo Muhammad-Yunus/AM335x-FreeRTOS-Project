@@ -7,7 +7,7 @@
 > **Hardware Target:** This project is targeted at the **Antminer L3+** mining board, which uses the **TI AM3352** (ARM Cortex-A8) SoC. The PCB form factor is roughly similar to the BeagleBone Black / AM3356, **but without the PRU subsystems**. This makes the Antminer L3+ a **low-cost option to repurpose** retired mining hardware as a learning platform for FreeRTOS on TI's Cortex-A stack. The banner image above is the Antminer L3+ board itself.
 
 <p align="center">
-  <strong>A bare-metal FreeRTOS port for the TI AM3352 (Cortex-A8), built with CMake + GCC ARM, flashable via J-Link GDB Server.</strong>
+  <strong>A FreeRTOS port for the TI AM3352 (Cortex-A8), built with CMake + GCC ARM, flashable via J-Link GDB Server.</strong>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ## Overview
 
-This repository contains a **bare-metal FreeRTOS port** for the TI AM3352 SoC. It uses:
+This repository contains a **FreeRTOS port** for the TI AM3352 SoC. It uses:
 
 - **GNU ARM GCC 7.3.1** (`gcc-arm-none-eabi-7-2018-q2-update`)
 - **CMake 3.11+** with Ninja generator
