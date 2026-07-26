@@ -1,0 +1,9 @@
+device AM3352
+si JTAG
+speed 1000
+connect
+r
+loadbin build3/app.freeRTOSBBB.bin 0x80000000
+setpc 0x80000100
+g
+exit

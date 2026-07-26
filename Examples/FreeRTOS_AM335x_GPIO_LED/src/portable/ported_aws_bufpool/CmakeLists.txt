@@ -1,0 +1,6 @@
+
+target_sources(${PROJECT_NAME}.elf
+                PRIVATE
+                    "${CMAKE_CURRENT_SOURCE_DIR}/aws_bufferpool_static_thread_safe.c"
+
+            )
