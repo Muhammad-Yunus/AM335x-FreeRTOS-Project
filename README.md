@@ -96,6 +96,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 📨 [**`Examples/FreeRTOS_AM335x_Message_Buffer/`**](./Examples/FreeRTOS_AM335x_Message_Buffer/) — Demonstrates queue‑based message passing with CRC validation and variable‑length msg framing (16‑255B) via UART.
 
+- 📈 [**`Examples/FreeRTOS_AM335x_Stream_Buffer/`**](./Examples/FreeRTOS_AM335x_Stream_Buffer/) — Demonstrates stream buffer for dynamic data flow, variable‑size chunks, and circular buffer semantics via UART.
+
 ---
 
 ## Folder Layout
@@ -119,7 +121,8 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Mutex/           ← FreeRTOS mutex & resource protection demo (priority inheritance)
     ├── FreeRTOS_AM335x_Task_Notification/ ← FreeRTOS task notification demo (xTaskNotify/ISR notify)
     ├── FreeRTOS_AM335x_Event_Group/   ← FreeRTOS event group sync demo (set/clear/wait bits)
-    └── FreeRTOS_AM335x_Message_Buffer/ ← FreeRTOS message buffer demo (CRC, variable-length, UART)
+    ├── FreeRTOS_AM335x_Message_Buffer/ ← FreeRTOS message buffer demo (CRC, variable-length, UART)
+    └── FreeRTOS_AM335x_Stream_Buffer/ ← FreeRTOS stream buffer demo (dynamic data flow, circular buffer)
 ```
 
 ---
