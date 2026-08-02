@@ -72,7 +72,7 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 🟧 [**`Examples/FreeRTOS_AM335x_GPIO_LED/`**](./Examples/FreeRTOS_AM335x_GPIO_LED/) — **Minimal FreeRTOS port** on AM3352. Runs two LED blink tasks (GPIO1[23] + GPIO1[24]) on FreeRTOS with AINTC-based tick timer. Built with CMake, flashed via JTAG.
 
-- 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — **GPIO interrupt demo** on AM3352. Blinks the on-board LED D2 (GPIO1_21 / USR0); pressing a pushbutton on **P9_12** (GPIO1_28) fires an AINTC edge interrupt that speeds up the blink rate.
+- 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — **GPIO interrupt demo** on AM3352. A pushbutton on P9_12 fires an AINTC edge interrupt that speeds up the on-board LED D2 blink rate.
 
 - ⚙️ [**`Examples/FreeRTOS_AM335x_Task_Management/`**](./Examples/FreeRTOS_AM335x_Task_Management/) — **Task management demo** on AM3352. demonstrates `vTaskSuspend`/`vTaskResume`, cross-task `vTaskDelete`, and the idle hook via UART logging.
 
