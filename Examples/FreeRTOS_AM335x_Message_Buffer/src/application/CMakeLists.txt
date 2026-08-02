@@ -1,0 +1,9 @@
+
+target_sources(src_application
+                PUBLIC
+                    "${CMAKE_CURRENT_SOURCE_DIR}/app_utils.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/main.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/MessageBufferDemo.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/TaskLED2.c"
+
+            )

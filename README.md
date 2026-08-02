@@ -94,6 +94,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 💥 [**`Examples/FreeRTOS_AM335x_Event_Group/`**](./Examples/FreeRTOS_AM335x_Event_Group/) — Demonstrates event group synchronization: setting/clearing bits, waiting for bit combinations via UART logging.
 
+- 📨 [**`Examples/FreeRTOS_AM335x_Message_Buffer/`**](./Examples/FreeRTOS_AM335x_Message_Buffer/) — Demonstrates queue‑based message passing with CRC validation and variable‑length msg framing (16‑255B) via UART.
+
 ---
 
 ## Folder Layout
@@ -115,7 +117,9 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Queue/           ← FreeRTOS queue task-communication demo (producer/consumer)
     ├── FreeRTOS_AM335x_Semaphore/       ← FreeRTOS sync primitives demo (binary/counting/ISR/notify/sync)
     ├── FreeRTOS_AM335x_Mutex/           ← FreeRTOS mutex & resource protection demo (priority inheritance)
-    └── FreeRTOS_AM335x_Task_Notification/ ← FreeRTOS task notification demo (xTaskNotify/ISR notify)
+    ├── FreeRTOS_AM335x_Task_Notification/ ← FreeRTOS task notification demo (xTaskNotify/ISR notify)
+    ├── FreeRTOS_AM335x_Event_Group/   ← FreeRTOS event group sync demo (set/clear/wait bits)
+    └── FreeRTOS_AM335x_Message_Buffer/ ← FreeRTOS message buffer demo (CRC, variable-length, UART)
 ```
 
 ---
