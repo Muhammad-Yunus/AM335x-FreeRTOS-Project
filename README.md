@@ -72,6 +72,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 🟧 [**`Examples/FreeRTOS_AM335x_GPIO_LED/`**](./Examples/FreeRTOS_AM335x_GPIO_LED/) — **Minimal FreeRTOS port** on AM3352. Runs two LED blink tasks (GPIO1[23] + GPIO1[24]) on FreeRTOS with AINTC-based tick timer. Built with CMake, flashed via JTAG. See its [`README.md`](./Examples/FreeRTOS_AM335x_GPIO_LED/README.md) for full build, flash, and debug instructions.
 
+- 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — **GPIO interrupt demo** on AM3352. Blinks the on-board LED D2 (GPIO1_21 / USR0); pressing a pushbutton on **P9_12** (GPIO1_28) fires an AINTC edge interrupt that speeds up the blink rate. See its [`README.md`](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/README.md) for full build, flash, and debug instructions.
+
 ---
 
 ## Folder Layout
@@ -83,7 +85,8 @@ AM335x-FreeRTOS-Project/
 ├── Doc/
 │   └── bg.png                 ← banner image
 └── Examples/                  ← all portable examples live here
-    └── FreeRTOS_AM335x_GPIO_LED/    ← FreeRTOS bare-metal port for AM3352
+    ├── FreeRTOS_AM335x_GPIO_LED/    ← FreeRTOS bare-metal port for AM3352 (LED blink tasks)
+    └── FreeRTOS_AM335x_GPIO_INTERRUPT/  ← FreeRTOS GPIO interrupt demo (button → LED speed)
 ```
 
 ---

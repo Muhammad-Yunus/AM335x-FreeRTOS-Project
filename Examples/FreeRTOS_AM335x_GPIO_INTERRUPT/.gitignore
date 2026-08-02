@@ -1,0 +1,86 @@
+# ============================================================
+# FreeRTOS_AM335x_GPIO_INTERRUPT — .gitignore
+# Exclude: build artifacts, IDE files, local configs, binaries
+# ============================================================
+
+# --------------------
+# Build output
+# --------------------
+build/
+GNU_Debug/
+*.bin
+*.elf
+*.elf.elf
+*.map
+*.img
+*.sdcard
+
+# --------------------
+# IDE / Editor
+# --------------------
+.vscode/ipch/
+.vscode/settings.json
+.settings/
+env[23]/
+env/
+
+# --------------------
+# Backup / orig files
+# --------------------
+*.orig
+
+# --------------------
+# Python / CMake cache
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+
+CMakeCache.txt
+cmake_install.cmake
+build.ninja
+CMakeFiles/
+
+# --------------------
+# Local config files (path-specific, machine-dependent)
+# --------------------
+gcc-a.toolchain.cmake        # copy of .sample.cmake with local paths
+*.jlink.local                  # any local jlink variants
+
+# --------------------
+# Binary / large files
+# --------------------
+*.axf
+*.out
+*.cof
+*.mprj
+
+# --------------------
+# OS generated files
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# Temporary / scratch
+# --------------------
+*.tmp
+*.swp
+*~
+
+# --------------------
+# Runtime logs (J-Link GDB sessions)
+# --------------------
+gdb_out.txt
+jlink_*.log
+
+# --------------------
+# Ad-hoc debug scripts (generated during debugging sessions)
+# --------------------
+debug_*.gdb
+debug_*.jlink
+
+# --------------------
+# Third-party libraries (cloned repos, not committed)
+# --------------------
+lib/third_party/*
