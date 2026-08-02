@@ -68,7 +68,7 @@ Full step-by-step instructions are in each project's folder under [`Examples/`](
 
 All examples live under the [`Examples/`](./Examples/) folder.
 
-### RTOS Examples
+### FreeRTOS Examples
 
 - 🟧 [**`Examples/FreeRTOS_AM335x_GPIO_LED/`**](./Examples/FreeRTOS_AM335x_GPIO_LED/) — **Minimal FreeRTOS port** on AM3352. Runs two LED blink tasks (GPIO1[23] + GPIO1[24]) on FreeRTOS with AINTC-based tick timer. Built with CMake, flashed via JTAG.
 
