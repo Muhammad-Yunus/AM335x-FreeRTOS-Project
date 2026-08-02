@@ -70,23 +70,23 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 ### FreeRTOS Examples
 
-- 🟧 [**`Examples/FreeRTOS_AM335x_GPIO_LED/`**](./Examples/FreeRTOS_AM335x_GPIO_LED/) — **Minimal FreeRTOS port** on AM3352. Runs two LED blink tasks (GPIO1[23] + GPIO1[24]) on FreeRTOS with AINTC-based tick timer. Built with CMake, flashed via JTAG.
+- 🟧 [**`Examples/FreeRTOS_AM335x_GPIO_LED/`**](./Examples/FreeRTOS_AM335x_GPIO_LED/) — Blinks two LEDs using GPIO and FreeRTOS tick timer on AM3352 SoC, configured via CMake.
 
-- 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — **GPIO interrupt demo** on AM3352. A pushbutton on P9_12 fires an AINTC edge interrupt that speeds up the on-board LED D2 blink rate.
+- 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — Demonstrates AINTC edge-triggered GPIO interrupts on P9_12 to dynamically control on-board LED blink rate.
 
-- ⚙️ [**`Examples/FreeRTOS_AM335x_Task_Management/`**](./Examples/FreeRTOS_AM335x_Task_Management/) — **Task management demo** on AM3352. Demonstrates `vTaskSuspend`/`vTaskResume`, cross-task `vTaskDelete`, and the idle hook via UART logging.
+- ⚙️ [**`Examples/FreeRTOS_AM335x_Task_Management/`**](./Examples/FreeRTOS_AM335x_Task_Management/) — Demonstrates task creation, suspension, resumption, deletion, and idle hook utilities using UART logging.
 
-- 🔀 [**`Examples/FreeRTOS_AM335x_Task_Scheduler/`**](./Examples/FreeRTOS_AM335x_Task_Scheduler/) — **Scheduler & task priority demo** on AM3352. Three tasks demonstrate preemptive/cooperative scheduling, time slicing, and context switching, all observable via UART logging.
+- 🔀 [**`Examples/FreeRTOS_AM335x_Task_Scheduler/`**](./Examples/FreeRTOS_AM335x_Task_Scheduler/) — Showcases preemptive and cooperative task scheduling, time slicing, and task priorities via UART output.
 
-- ⏱️ [**`Examples/FreeRTOS_AM335x_Task_Timing/`**](./Examples/FreeRTOS_AM335x_Task_Timing/) — **Task delay & timing demo** on AM3352. Demonstrates `vTaskDelayUntil` (drift-free periodic), `vTaskDelay` (relative), and a software timer via UART logging.
+- ⏱️ [**`Examples/FreeRTOS_AM335x_Task_Timing/`**](./Examples/FreeRTOS_AM335x_Task_Timing/) — Demonstrates relative and drift-free periodic task delays (`vTaskDelay`/`vTaskDelayUntil`) and software timers.
 
-- 📬 [**`Examples/FreeRTOS_AM335x_Queue/`**](./Examples/FreeRTOS_AM335x_Queue/) — **Queue-based task communication demo** on AM3352. Producer-Consumer pattern over a FIFO queue: `xQueueSend()`/`xQueueReceive()`, queue length (`uxQueueMessagesWaiting`/`uxQueueSpacesAvailable`), and blocking on both empty and full queues via UART logging.
+- 📬 [**`Examples/FreeRTOS_AM335x_Queue/`**](./Examples/FreeRTOS_AM335x_Queue/) — Demonstrates Producer-Consumer task communication over a FIFO queue with blocking times and logging.
 
-- 🔐 [**`Examples/FreeRTOS_AM335x_Semaphore/`**](./Examples/FreeRTOS_AM335x_Semaphore/) — **Synchronization primitives demo** on AM3352. Six phases covering binary & counting semaphores, ISR semaphore (given from the tick hook), event notifications (`xTaskNotifyGive`/`ulTaskNotifyTake`), task synchronization (rendezvous), and task lifecycle via UART logging.
+- 🔐 [**`Examples/FreeRTOS_AM335x_Semaphore/`**](./Examples/FreeRTOS_AM335x_Semaphore/) — Showcases binary, counting, and ISR semaphores, task synchronization, and direct event notifications.
 
-- 🔒 [**`Examples/FreeRTOS_AM335x_Mutex/`**](./Examples/FreeRTOS_AM335x_Mutex/) — **Mutex & resource protection demo** on AM3352. Demonstrates mutexes, recursive mutexes, priority inheritance (priority inversion prevention), critical sections (`taskENTER_CRITICAL`), and UART peripheral protection via UART logging.
+- 🔒 [**`Examples/FreeRTOS_AM335x_Mutex/`**](./Examples/FreeRTOS_AM335x_Mutex/) — Demonstrates mutexes, recursive mutexes, priority inheritance, critical sections, and UART peripheral protection.
 
-- 🔔 [**`Examples/FreeRTOS_AM335x_Task_Notification/`**](./Examples/FreeRTOS_AM335x_Task_Notification/) — **Direct-to-task notification demo** on AM3352. Demonstrates light-weight task notifications using `xTaskNotify()`, `xTaskNotifyWait()`, `ulTaskNotifyTake()`, and `xTaskNotifyFromISR()` (sent from the DMTimer2 tick ISR) via UART logging.
+- 🔔 [**`Examples/FreeRTOS_AM335x_Task_Notification/`**](./Examples/FreeRTOS_AM335x_Task_Notification/) — Demonstrates lightweight task notifications for sending values, counting events, and signaling from ISRs.
 
 ---
 
