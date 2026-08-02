@@ -84,6 +84,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 🔐 [**`Examples/FreeRTOS_AM335x_Semaphore/`**](./Examples/FreeRTOS_AM335x_Semaphore/) — **Synchronization primitives demo** on AM3352. Six phases covering binary & counting semaphores, ISR semaphore (given from the tick hook), event notifications (`xTaskNotifyGive`/`ulTaskNotifyTake`), task synchronization (rendezvous), and task lifecycle via UART logging.
 
+- 🔒 [**`Examples/FreeRTOS_AM335x_Mutex/`**](./Examples/FreeRTOS_AM335x_Mutex/) — **Mutex & resource protection demo** on AM3352. Demonstrates mutexes, recursive mutexes, priority inheritance (priority inversion prevention), critical sections (`taskENTER_CRITICAL`), and UART peripheral protection via UART logging.
+
 ---
 
 ## Folder Layout
@@ -101,7 +103,8 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Task_Scheduler/  ← FreeRTOS scheduler & priority demo (preemption/time slicing)
     ├── FreeRTOS_AM335x_Task_Timing/     ← FreeRTOS task delay & timing demo (vTaskDelayUntil/timer)
     ├── FreeRTOS_AM335x_Queue/           ← FreeRTOS queue task-communication demo (producer/consumer)
-    └── FreeRTOS_AM335x_Semaphore/       ← FreeRTOS sync primitives demo (binary/counting/ISR/notify/sync)
+    ├── FreeRTOS_AM335x_Semaphore/       ← FreeRTOS sync primitives demo (binary/counting/ISR/notify/sync)
+    └── FreeRTOS_AM335x_Mutex/           ← FreeRTOS mutex & resource protection demo (priority inheritance)
 ```
 
 ---
