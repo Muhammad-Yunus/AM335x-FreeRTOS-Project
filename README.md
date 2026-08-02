@@ -92,6 +92,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 🔔 [**`Examples/FreeRTOS_AM335x_Task_Notification/`**](./Examples/FreeRTOS_AM335x_Task_Notification/) — Demonstrates lightweight task notifications for sending values, counting events, and signaling from ISRs.
 
+- 💥 [**`Examples/FreeRTOS_AM335x_Event_Group/`**](./Examples/FreeRTOS_AM335x_Event_Group/) — Demonstrates event group synchronization: setting/clearing bits, waiting for bit combinations via UART logging.
+
 ---
 
 ## Folder Layout

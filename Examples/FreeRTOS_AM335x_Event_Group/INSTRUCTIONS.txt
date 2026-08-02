@@ -1,0 +1,49 @@
+# INSTRUCTIONS FOR TWO-TERMINAL FLASHING (maximum verbosity)
+
+## TERMINAL 1 - START J-LINK GDB SERVER
+-------------------------------------------
+Open a new terminal and run:
+```
+C:\Program Files\SEGGER\JLink_V844\JLinkGDBServer.exe -if JTAG -device AM3352 -endian little -speed 12000 -port 2331
+```
+
+Wait for confirmation that it's connected:
+- You should see "Connected to target" in the console
+- The server should indicate it's ready on port 2331
+- DO NOT close this terminal!
+
+## TERMINAL 2 - FLASH AND RUN
+---------------------------
+Open a SECOND new terminal and run:
+```
+C:\ti\gcc-arm-none-eabi-7-2018-q2-update\bin\arm-none-eabi-gdb.exe build\freeRTOSBBB.elf -batch -ex "target remote localhost:2331" -ex "load" -ex "monitor go 0x80000100"
+```
+
+You should see:
+- Loading section .startcode, size 0x1b4 lma 0x80000000
+- Loading section .text, size 0x37b08 lma 0x800001c0
+- Start address 0x80000100, load size 249336
+- Transfer rate: XX KB/sec
+
+Then the program should start executing at address 0x80000100.
+
+## VERIFY UART OUTPUT
+------------------
+Open your serial monitor (COM4) at 115200 8N1.
+Expected output:
+```
+TIMER2_CLKSEL=0x00000001
+First tick!
+[EG] Event Group Demo starting...
+[TASK] vDemoController created
+
+--- Scenario 1: SetBits & ClearBits ---
+[TASK] vSetClearBitsTask created
+[EG] SetBits: bits=0x00000001, event_group=0x00000001
+[EG] ClearBits: bits=0x00000001, event_group=0x00000000
+...
+[EG] === All Event Group demos completed ===
+```
+
+## TROUBLESHOOTING
+- If UART output is empty, verify COM4, 115200 baud, J-Link server running
