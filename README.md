@@ -86,6 +86,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 🔒 [**`Examples/FreeRTOS_AM335x_Mutex/`**](./Examples/FreeRTOS_AM335x_Mutex/) — **Mutex & resource protection demo** on AM3352. Demonstrates mutexes, recursive mutexes, priority inheritance (priority inversion prevention), critical sections (`taskENTER_CRITICAL`), and UART peripheral protection via UART logging.
 
+- 🔔 [**`Examples/FreeRTOS_AM335x_Task_Notification/`**](./Examples/FreeRTOS_AM335x_Task_Notification/) — **Direct-to-task notification demo** on AM3352. Demonstrates light-weight task notifications using `xTaskNotify()`, `xTaskNotifyWait()`, `ulTaskNotifyTake()`, and `xTaskNotifyFromISR()` (sent from the DMTimer2 tick ISR) via UART logging.
+
 ---
 
 ## Folder Layout
@@ -104,7 +106,8 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Task_Timing/     ← FreeRTOS task delay & timing demo (vTaskDelayUntil/timer)
     ├── FreeRTOS_AM335x_Queue/           ← FreeRTOS queue task-communication demo (producer/consumer)
     ├── FreeRTOS_AM335x_Semaphore/       ← FreeRTOS sync primitives demo (binary/counting/ISR/notify/sync)
-    └── FreeRTOS_AM335x_Mutex/           ← FreeRTOS mutex & resource protection demo (priority inheritance)
+    ├── FreeRTOS_AM335x_Mutex/           ← FreeRTOS mutex & resource protection demo (priority inheritance)
+    └── FreeRTOS_AM335x_Task_Notification/ ← FreeRTOS task notification demo (xTaskNotify/ISR notify)
 ```
 
 ---
