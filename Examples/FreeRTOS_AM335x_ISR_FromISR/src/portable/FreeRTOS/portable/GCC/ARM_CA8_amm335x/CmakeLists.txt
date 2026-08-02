@@ -1,0 +1,7 @@
+
+target_sources(${PROJECT_NAME}.elf
+                PRIVATE
+                    "${CMAKE_CURRENT_SOURCE_DIR}/port.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/portASM_CA8_am335x.S"
+
+            )
