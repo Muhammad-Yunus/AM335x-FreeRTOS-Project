@@ -70,33 +70,20 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 ### FreeRTOS Examples
 
-- 🟧 [**`Examples/FreeRTOS_AM335x_GPIO_LED/`**](./Examples/FreeRTOS_AM335x_GPIO_LED/) — Blinks two LEDs using GPIO and FreeRTOS tick timer on AM3352 SoC, configured via CMake.
-
-- 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — Demonstrates AINTC edge-triggered GPIO interrupts on P9_12 to dynamically control on-board LED blink rate.
-
-- ⚙️ [**`Examples/FreeRTOS_AM335x_Task_Management/`**](./Examples/FreeRTOS_AM335x_Task_Management/) — Demonstrates task creation, suspension, resumption, deletion, and idle hook utilities using UART logging.
-
-- 🔀 [**`Examples/FreeRTOS_AM335x_Task_Scheduler/`**](./Examples/FreeRTOS_AM335x_Task_Scheduler/) — Showcases preemptive and cooperative task scheduling, time slicing, and task priorities via UART output.
-
-- ⏱️ [**`Examples/FreeRTOS_AM335x_Task_Timing/`**](./Examples/FreeRTOS_AM335x_Task_Timing/) — Demonstrates relative and drift-free periodic task delays (`vTaskDelay`/`vTaskDelayUntil`) and software timers.
-
-- 🧠 [**`Examples/FreeRTOS_AM335x_Memory_Debug/`**](./Examples/FreeRTOS_AM335x_Memory_Debug/) — Compares static versus dynamic task allocation, heap schemes, and monitors stack and heap via UART.
-
-- ⏲️ [**`Examples/FreeRTOS_AM335x_Software_Timer/`**](./Examples/FreeRTOS_AM335x_Software_Timer/) — Demonstrates FreeRTOS software timers: one-shot (5s) and auto-reload (2s) callbacks managed by the Timer Service Task via UART.
-
-- 📬 [**`Examples/FreeRTOS_AM335x_Queue/`**](./Examples/FreeRTOS_AM335x_Queue/) — Demonstrates Producer-Consumer task communication over a FIFO queue with blocking times and logging.
-
-- 🔐 [**`Examples/FreeRTOS_AM335x_Semaphore/`**](./Examples/FreeRTOS_AM335x_Semaphore/) — Showcases binary, counting, and ISR semaphores, task synchronization, and direct event notifications.
-
-- 🔒 [**`Examples/FreeRTOS_AM335x_Mutex/`**](./Examples/FreeRTOS_AM335x_Mutex/) — Demonstrates mutexes, recursive mutexes, priority inheritance, critical sections, and UART peripheral protection.
-
-- 🔔 [**`Examples/FreeRTOS_AM335x_Task_Notification/`**](./Examples/FreeRTOS_AM335x_Task_Notification/) — Demonstrates lightweight task notifications for sending values, counting events, and signaling from ISRs.
-
-- 💥 [**`Examples/FreeRTOS_AM335x_Event_Group/`**](./Examples/FreeRTOS_AM335x_Event_Group/) — Demonstrates event group synchronization: setting/clearing bits, waiting for bit combinations via UART logging.
-
-- 📨 [**`Examples/FreeRTOS_AM335x_Message_Buffer/`**](./Examples/FreeRTOS_AM335x_Message_Buffer/) — Demonstrates queue‑based message passing with CRC validation and variable‑length msg framing (16‑255B) via UART.
-
-- 📈 [**`Examples/FreeRTOS_AM335x_Stream_Buffer/`**](./Examples/FreeRTOS_AM335x_Stream_Buffer/) — Demonstrates stream buffer for dynamic data flow, variable‑size chunks, and circular buffer semantics via UART.
+- 🟧 [**`Examples/FreeRTOS_AM335x_GPIO_LED/`**](./Examples/FreeRTOS_AM335x_GPIO_LED/) — Basic FreeRTOS port: two LED blink tasks on AM3352 using CMake and JTAG.
+- 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — GPIO interrupt demo: AINTC edge interrupt to control LED D2 blink rate dynamically.
+- ⚙️ [**`Examples/FreeRTOS_AM335x_Task_Management/`**](./Examples/FreeRTOS_AM335x_Task_Management/) — Task lifecycle: create, suspend, resume, delete, and idle hook utilities over UART.
+- 🔀 [**`Examples/FreeRTOS_AM335x_Task_Scheduler/`**](./Examples/FreeRTOS_AM335x_Task_Scheduler/) — Preemption, time slicing, and priority scheduling via UART logging.
+- ⏱️ [**`Examples/FreeRTOS_AM335x_Task_Timing/`**](./Examples/FreeRTOS_AM335x_Task_Timing/) — Task delays: vTaskDelay, vTaskDelayUntil, and software timer demos.
+- 🧠 [**`Examples/FreeRTOS_AM335x_Memory_Debug/`**](./Examples/FreeRTOS_AM335x_Memory_Debug/) — Static vs dynamic task allocation, heap schemes, and stack/heap monitoring via UART.
+- 🔐 [**`Examples/FreeRTOS_AM335x_Semaphore/`**](./Examples/FreeRTOS_AM335x_Semaphore/) — Binary, counting, ISR semaphores, event notification, and task rendezvous demos.
+- 🔒 [**`Examples/FreeRTOS_AM335x_Mutex/`](./Examples/FreeRTOS_AM335x_Mutex/) — Mutex, recursive mutex, priority inheritance, critical sections, and UART peripheral protection.
+- 📬 [**`Examples/FreeRTOS_AM335x_Queue/`**](./Examples/FreeRTOS_AM335x_Queue/) — Producer-Consumer FIFO queue demo: xQueueSend/Receive with blocking and queue length monitoring.
+- 🔔 [**`Examples/FreeRTOS_AM335x_Task_Notification/`**](./Examples/FreeRTOS_AM335x_Task_Notification/) — Direct-to-task notifications: xTaskNotify, wait, take, and ISR signaling demonstrations.
+- 💥 [**`Examples/FreeRTOS_AM335x_Event_Group/`**](./Examples/FreeRTOS_AM335x_Event_Group/) — Event group sync: set/clear bits, wait for bit combinations, via UART logging.
+- ⏲️ [**`Examples/FreeRTOS_AM335x_Software_Timer/`**](./Examples/FreeRTOS_AM335x_Software_Timer/) — One-shot and auto-reload FreeRTOS software timers with callbacks managed by daemon task.
+- 📨 [**`Examples/FreeRTOS_AM335x_Message_Buffer/`**](./Examples/FreeRTOS_AM335x_Message_Buffer/) — Queue‑based message passing with CRC validation and variable-length framing via UART.
+- 📈 [**`Examples/FreeRTOS_AM335x_Stream_Buffer/`**](./Examples/FreeRTOS_AM335x_Stream_Buffer/) — Stream buffer for dynamic data flow, variable-size chunks, and circular buffer semantics via UART.
 
 ---
 
@@ -115,12 +102,12 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Task_Scheduler/  ← FreeRTOS scheduler & priority demo (preemption/time slicing)
     ├── FreeRTOS_AM335x_Task_Timing/     ← FreeRTOS task delay & timing demo (vTaskDelayUntil/timer)
     ├── FreeRTOS_AM335x_Memory_Debug/   ← FreeRTOS memory management demo (static/dynamic allocation, heap schemes)
-    ├── FreeRTOS_AM335x_Software_Timer/ ← FreeRTOS software timer demo (one-shot / auto-reload)
-    ├── FreeRTOS_AM335x_Queue/           ← FreeRTOS queue task-communication demo (producer/consumer)
     ├── FreeRTOS_AM335x_Semaphore/       ← FreeRTOS sync primitives demo (binary/counting/ISR/notify/sync)
     ├── FreeRTOS_AM335x_Mutex/           ← FreeRTOS mutex & resource protection demo (priority inheritance)
+    ├── FreeRTOS_AM335x_Queue/           ← FreeRTOS queue task-communication demo (producer/consumer)
     ├── FreeRTOS_AM335x_Task_Notification/ ← FreeRTOS task notification demo (xTaskNotify/ISR notify)
     ├── FreeRTOS_AM335x_Event_Group/   ← FreeRTOS event group sync demo (set/clear/wait bits)
+    ├── FreeRTOS_AM335x_Software_Timer/ ← FreeRTOS software timer demo (one-shot / auto-reload)
     ├── FreeRTOS_AM335x_Message_Buffer/ ← FreeRTOS message buffer demo (CRC, variable-length, UART)
     └── FreeRTOS_AM335x_Stream_Buffer/ ← FreeRTOS stream buffer demo (dynamic data flow, circular buffer)
 ```
