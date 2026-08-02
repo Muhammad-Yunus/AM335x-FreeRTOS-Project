@@ -80,6 +80,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - ⏱️ [**`Examples/FreeRTOS_AM335x_Task_Timing/`**](./Examples/FreeRTOS_AM335x_Task_Timing/) — **Task delay & timing demo** on AM3352. Demonstrates `vTaskDelayUntil` (drift-free periodic), `vTaskDelay` (relative), and a software timer via UART logging.
 
+- 📬 [**`Examples/FreeRTOS_AM335x_Queue/`**](./Examples/FreeRTOS_AM335x_Queue/) — **Queue-based task communication demo** on AM3352. Producer-Consumer pattern over a FIFO queue: `xQueueSend()`/`xQueueReceive()`, queue length (`uxQueueMessagesWaiting`/`uxQueueSpacesAvailable`), and blocking on both empty and full queues via UART logging.
+
 ---
 
 ## Folder Layout
@@ -95,7 +97,8 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_GPIO_INTERRUPT/  ← FreeRTOS GPIO interrupt demo (button → LED speed)
     ├── FreeRTOS_AM335x_Task_Management/ ← FreeRTOS task management demo (suspend/resume/delete)
     ├── FreeRTOS_AM335x_Task_Scheduler/  ← FreeRTOS scheduler & priority demo (preemption/time slicing)
-    └── FreeRTOS_AM335x_Task_Timing/     ← FreeRTOS task delay & timing demo (vTaskDelayUntil/timer)
+    ├── FreeRTOS_AM335x_Task_Timing/     ← FreeRTOS task delay & timing demo (vTaskDelayUntil/timer)
+    └── FreeRTOS_AM335x_Queue/           ← FreeRTOS queue task-communication demo (producer/consumer)
 ```
 
 ---
