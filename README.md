@@ -80,6 +80,8 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - ⏱️ [**`Examples/FreeRTOS_AM335x_Task_Timing/`**](./Examples/FreeRTOS_AM335x_Task_Timing/) — Demonstrates relative and drift-free periodic task delays (`vTaskDelay`/`vTaskDelayUntil`) and software timers.
 
+- 🧠 [**`Examples/FreeRTOS_AM335x_Memory_Debug/`**](./Examples/FreeRTOS_AM335x_Memory_Debug/) — Compares static versus dynamic task allocation, heap schemes, and monitors stack and heap via UART.
+
 - ⏲️ [**`Examples/FreeRTOS_AM335x_Software_Timer/`**](./Examples/FreeRTOS_AM335x_Software_Timer/) — Demonstrates FreeRTOS software timers: one-shot (5s) and auto-reload (2s) callbacks managed by the Timer Service Task via UART.
 
 - 📬 [**`Examples/FreeRTOS_AM335x_Queue/`**](./Examples/FreeRTOS_AM335x_Queue/) — Demonstrates Producer-Consumer task communication over a FIFO queue with blocking times and logging.
@@ -106,6 +108,7 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Task_Management/ ← FreeRTOS task management demo (suspend/resume/delete)
     ├── FreeRTOS_AM335x_Task_Scheduler/  ← FreeRTOS scheduler & priority demo (preemption/time slicing)
     ├── FreeRTOS_AM335x_Task_Timing/     ← FreeRTOS task delay & timing demo (vTaskDelayUntil/timer)
+    ├── FreeRTOS_AM335x_Memory_Debug/   ← FreeRTOS memory management demo (static/dynamic allocation, heap schemes)
     ├── FreeRTOS_AM335x_Software_Timer/ ← FreeRTOS software timer demo (one-shot / auto-reload)
     ├── FreeRTOS_AM335x_Queue/           ← FreeRTOS queue task-communication demo (producer/consumer)
     ├── FreeRTOS_AM335x_Semaphore/       ← FreeRTOS sync primitives demo (binary/counting/ISR/notify/sync)
