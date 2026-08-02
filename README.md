@@ -74,7 +74,9 @@ All examples live under the [`Examples/`](./Examples/) folder.
 
 - 🔘 [**`Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/`**](./Examples/FreeRTOS_AM335x_GPIO_INTERRUPT/) — **GPIO interrupt demo** on AM3352. A pushbutton on P9_12 fires an AINTC edge interrupt that speeds up the on-board LED D2 blink rate.
 
-- ⚙️ [**`Examples/FreeRTOS_AM335x_Task_Management/`**](./Examples/FreeRTOS_AM335x_Task_Management/) — **Task management demo** on AM3352. demonstrates `vTaskSuspend`/`vTaskResume`, cross-task `vTaskDelete`, and the idle hook via UART logging.
+- ⚙️ [**`Examples/FreeRTOS_AM335x_Task_Management/`**](./Examples/FreeRTOS_AM335x_Task_Management/) — **Task management demo** on AM3352. Demonstrates `vTaskSuspend`/`vTaskResume`, cross-task `vTaskDelete`, and the idle hook via UART logging.
+
+- 🔀 [**`Examples/FreeRTOS_AM335x_Task_Scheduler/`**](./Examples/FreeRTOS_AM335x_Task_Scheduler/) — **Scheduler & task priority demo** on AM3352. Three tasks demonstrate preemptive/cooperative scheduling, time slicing, and context switching, all observable via UART logging.
 
 ---
 
@@ -89,7 +91,8 @@ AM335x-FreeRTOS-Project/
 └── Examples/                  ← all portable examples live here
     ├── FreeRTOS_AM335x_GPIO_LED/    ← FreeRTOS bare-metal port for AM3352 (LED blink tasks)
     ├── FreeRTOS_AM335x_GPIO_INTERRUPT/  ← FreeRTOS GPIO interrupt demo (button → LED speed)
-    └── FreeRTOS_AM335x_Task_Management/ ← FreeRTOS task management demo (suspend/resume/delete)
+    ├── FreeRTOS_AM335x_Task_Management/ ← FreeRTOS task management demo (suspend/resume/delete)
+    └── FreeRTOS_AM335x_Task_Scheduler/  ← FreeRTOS scheduler & priority demo (preemption/time slicing)
 ```
 
 ---
