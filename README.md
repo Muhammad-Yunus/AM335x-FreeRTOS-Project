@@ -86,6 +86,7 @@ All examples live under the [`Examples/`](./Examples/) folder.
 - ⏲️ [**`Examples/FreeRTOS_AM335x_Software_Timer/`**](./Examples/FreeRTOS_AM335x_Software_Timer/) — One-shot and auto-reload FreeRTOS software timers with callbacks managed by daemon task.
 - 📨 [**`Examples/FreeRTOS_AM335x_Message_Buffer/`**](./Examples/FreeRTOS_AM335x_Message_Buffer/) — Queue‑based message passing with CRC validation and variable-length framing via UART.
 - 📈 [**`Examples/FreeRTOS_AM335x_Stream_Buffer/`**](./Examples/FreeRTOS_AM335x_Stream_Buffer/) — Stream buffer for dynamic data flow, variable-size chunks, and circular buffer semantics via UART.
+- 🛰️ [**`Examples/FreeRTOS_AM335x_UART_LDS08RR/`**](./Examples/FreeRTOS_AM335x_UART_LDS08RR/) — LDS08RR LiDAR decoder: UART1 Delta-2A polling, 360° scan assembly, and ASCII radial map on UART0.
 
 ---
 
@@ -113,7 +114,8 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Event_Group/   ← FreeRTOS event group sync demo (set/clear/wait bits)
     ├── FreeRTOS_AM335x_Software_Timer/ ← FreeRTOS software timer demo (one-shot / auto-reload)
     ├── FreeRTOS_AM335x_Message_Buffer/ ← FreeRTOS message buffer demo (CRC, variable-length, UART)
-    └── FreeRTOS_AM335x_Stream_Buffer/ ← FreeRTOS stream buffer demo (dynamic data flow, circular buffer)
+    ├── FreeRTOS_AM335x_Stream_Buffer/ ← FreeRTOS stream buffer demo (dynamic data flow, circular buffer)
+    └── FreeRTOS_AM335x_UART_LDS08RR/  ← FreeRTOS LDS08RR LiDAR decoder demo (UART1 polling + ASCII scan map)
 ```
 
 ---

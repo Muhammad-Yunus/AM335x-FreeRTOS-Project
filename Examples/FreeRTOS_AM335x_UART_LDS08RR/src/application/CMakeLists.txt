@@ -1,0 +1,12 @@
+
+target_sources(src_application
+                PUBLIC
+                    "${CMAKE_CURRENT_SOURCE_DIR}/app_utils.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/lds_render.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/lds_scan.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/lidar_lds08rr.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/main.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/uart1_driver.c"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/uart1_reader.c"
+
+            )
