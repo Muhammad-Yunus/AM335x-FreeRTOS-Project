@@ -88,6 +88,7 @@ All examples live under the [`Examples/`](./Examples/) folder.
 - 📨 [**`Examples/FreeRTOS_AM335x_Message_Buffer/`**](./Examples/FreeRTOS_AM335x_Message_Buffer/) — Queue‑based message passing with CRC validation and variable-length framing via UART.
 - 📈 [**`Examples/FreeRTOS_AM335x_Stream_Buffer/`**](./Examples/FreeRTOS_AM335x_Stream_Buffer/) — Stream buffer for dynamic data flow, variable-size chunks, and circular buffer semantics via UART.
 - 🛰️ [**`Examples/FreeRTOS_AM335x_UART_LDS08RR/`**](./Examples/FreeRTOS_AM335x_UART_LDS08RR/) — LDS08RR LiDAR decoder: UART1 Delta-2A polling, 360° scan assembly, and ASCII radial map on UART0.
+- 📡 [**`Examples/FreeRTOS_AM335x_SPI_ILI9341_LDS08RR/`**](./Examples/FreeRTOS_AM335x_SPI_ILI9341_LDS08RR/) — LiDAR LDS08RR decoder via UART1, radar visualization on ILI9341 TFT via SPI0.
 
 ---
 
@@ -117,7 +118,8 @@ AM335x-FreeRTOS-Project/
     ├── FreeRTOS_AM335x_Software_Timer/ ← FreeRTOS software timer demo (one-shot / auto-reload)
     ├── FreeRTOS_AM335x_Message_Buffer/ ← FreeRTOS message buffer demo (CRC, variable-length, UART)
     ├── FreeRTOS_AM335x_Stream_Buffer/ ← FreeRTOS stream buffer demo (dynamic data flow, circular buffer)
-    └── FreeRTOS_AM335x_UART_LDS08RR/  ← FreeRTOS LDS08RR LiDAR decoder demo (UART1 polling + ASCII scan map)
+    ├── FreeRTOS_AM335x_UART_LDS08RR/    ← FreeRTOS LDS08RR LiDAR decoder demo (UART1 polling + ASCII scan map)
+    └── FreeRTOS_AM335x_SPI_ILI9341_LDS08RR/ ← FreeRTOS LiDAR + ILI9341 radar TFT demo (UART1 + SPI0)
 ```
 
 ---
